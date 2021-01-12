@@ -10,6 +10,12 @@ public class Calcolatrice {
     private int giorno1;
     private int mese1;
     private int anno1;
+    private int giorno2;
+    private int mese2;
+    private int anno2;
+    private int temp;
+    private int nGiorni;
+    private int cont1 = 0;
     private int cont2 = 0;
 
     public void setGiorno1(int giorno1) throws Exception {
@@ -38,6 +44,36 @@ public class Calcolatrice {
             throw new Exception("impossibile sommare i giorni dati in input");
         }
         this.giorniInput = giorniInput;
+    }
+
+    private int contagiorni(int mese1){
+        switch (mese1){
+            case 1, 3, 5, 7, 8, 10, 12:
+                return 31;
+            case 2:
+                if (mese1 % 4 == 0){
+                    if (anno1 % 100 != 0){
+                        return 29;
+                    }
+                    if (anno1 % 400 == 0){
+                        return 29;
+                    }
+                }
+                return 28;
+            case 4, 6, 9, 11:
+                return 30;
+            default:
+                return 0;
+        }
+    }
+
+    public void differenza(){
+        temp = giorniInput;
+        while(giorniInput != 0){
+            nGiorni = contagiorni(mese1);
+
+        }
+        
     }
 
     public void somma(){
