@@ -7,7 +7,7 @@ public class Stelladinamica extends Stella {
     speedX = DEFAULT_VET;      //1 va verso dx, -1 va verso sinistra
   }
   
-  public void move()throws Exception{
+  public void move(){
     if (getCordX()  + speedX == width){
     speedX = -1;
     setDirezione(speedX);
@@ -21,12 +21,12 @@ public class Stelladinamica extends Stella {
     
   }
   
-  public void show() throws Exception {
+  public void show(){
     move();
     super.show();
     }
 
- public void setSpeedX(int vel){
+  public void setSpeedX(int vel){
       this.speedX = vel;
     }
     

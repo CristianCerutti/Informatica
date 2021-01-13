@@ -6,16 +6,16 @@ public class Stella {
    private float direzione;
    private static final color colore_stella = #ffff00;
   
-  public Stella(){
-    this.cordX = 50;
-    this.cordY = 50;
-    this.z1 = 50;
-    this.h1 = 50;
-    this.cordX = width/6;
-    this.cordY = height/6;
-  }
-  
-  public void show()throws Exception{
+public Stella(){
+   this.cordX = 50;
+   this.cordY = 50;
+   this.z1 = 50;
+   this.h1 = 50;
+   this.cordX = width/6;
+   this.cordY = height/6;
+}
+
+ public void show(){
     fill(colore_stella);
     stroke(colore_stella);
     triangle(cordX-z1/2, cordY, cordX, cordY-h1, cordX+z1/2, cordY);
@@ -28,10 +28,7 @@ public class Stella {
     }
 }
   
-  public void setCordX(float x) throws Exception{  
-    if (cordX > width){
-      throw new Exception("coordinate impossibili");
-    }
+  public void setCordX(float x){  
     cordX = x;
 }
   public void setCordY(float y){  cordY = y; }
