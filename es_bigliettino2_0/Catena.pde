@@ -12,8 +12,9 @@ class Catena{
    
    public void draw(){
      for(int c = 0; c<luci.length; c++){
-       luci[c].draw(); 
+       luci[c].draw();
      }
+     
    }
    
    public void ePremuto(float mx, float my){

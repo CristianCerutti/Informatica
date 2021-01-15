@@ -14,9 +14,5 @@ public void draw(){
   for(int a = 0; a<alberi.length; a++){
     alberi[a].draw();
   }
-}
-  
-  
-  
-  
+} 
 }

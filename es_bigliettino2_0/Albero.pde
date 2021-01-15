@@ -11,11 +11,12 @@ public class Albero{
        setZ(z);
        setH(h);
    }
+   
    public void draw() {
        fill(colore_albero);
        stroke(#000000);
        triangle(x-z/2, y, x, y-h, x+z/2, y); 
-   }
+    }
    
     public void setX(float x) {  
     this.x = x;
@@ -32,9 +33,4 @@ public class Albero{
     public void setH(float h){  
     this.h = h;
     }
-
-
-
-
-
 }

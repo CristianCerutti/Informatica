@@ -1,8 +1,9 @@
 Stelladinamica sd;
 Foresta nAlberi;
 Catena luci;
-private final static int N = 16;
+private final static int N = 26;
 public static final color colore_sfondo = #00008c;
+public int cont = 0;
 
 void setup(){
   size(600, 300);
